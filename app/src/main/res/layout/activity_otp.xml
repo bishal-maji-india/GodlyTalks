@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Otp">
+
+    <TextView
+        android:id="@+id/otp_title"
+        style="@style/ToolBarTextStyle"
+        android:layout_width="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/otp_back_img_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/otp_back_img_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="@dimen/padding_large"
+        android:rotation="180"
+        android:src="@drawable/baseline_arrow_right_alt_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/otp_desc"
+        style="@style/MediumBoldGreyTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Otp sent to mobile no 9734606970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_square_stroke"
+        android:layout_margin="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_desc">
+
+        <EditText
+            android:id="@+id/otp_et1"
+            style="@style/BoxEditTextStyle"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="@dimen/padding_standard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/otp_et2"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/otp_et2"
+            style="@style/BoxEditTextStyle"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="@dimen/padding_standard"
+            app:layout_constraintEnd_toStartOf="@+id/otp_et3"
+            app:layout_constraintStart_toEndOf="@+id/otp_et1"
+            app:layout_constraintTop_toTopOf="@+id/otp_et1" />
+
+        <EditText
+            android:id="@+id/otp_et3"
+            style="@style/BoxEditTextStyle"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="@dimen/padding_standard"
+            app:layout_constraintEnd_toStartOf="@+id/otp_et4"
+            app:layout_constraintStart_toEndOf="@+id/otp_et2"
+            app:layout_constraintTop_toTopOf="@+id/otp_et2" />
+
+        <EditText
+            android:id="@+id/otp_et4"
+            style="@style/BoxEditTextStyle"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="@dimen/padding_standard"
+            app:layout_constraintEnd_toStartOf="@+id/otp_et5"
+            app:layout_constraintStart_toEndOf="@+id/otp_et3"
+            app:layout_constraintTop_toTopOf="@+id/otp_et3" />
+
+        <EditText
+            android:id="@+id/otp_et5"
+            style="@style/BoxEditTextStyle"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="@dimen/padding_standard"
+            app:layout_constraintEnd_toStartOf="@+id/otp_et6"
+            app:layout_constraintStart_toEndOf="@+id/otp_et4"
+            app:layout_constraintTop_toTopOf="@+id/otp_et4" />
+
+        <EditText
+            android:id="@+id/otp_et6"
+            style="@style/BoxEditTextStyle"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="@dimen/padding_standard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/otp_et5"
+            app:layout_constraintTop_toTopOf="@+id/otp_et5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/SmallGreyLightTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="Enter otp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/otp_verify_btn"
+        style="@style/LongButtonStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:enabled="false"
+        android:text="Verify"
+        app:icon="@drawable/baseline_arrow_right_alt_24"
+        app:iconGravity="textEnd"
+        app:iconSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/otp_resend_btn"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Otp"
+        android:textSize="@dimen/text_size_medium_l"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/MediumBoldGreyTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="Resend Otp in 30s"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

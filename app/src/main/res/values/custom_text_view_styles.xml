@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeadingTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+    <style name="ToolBarTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">@dimen/text_size_medium_l</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+
+    <style name="SmallGreyLightTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+    <style name="SmallBoldGreyTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+    <style name="MediumBoldBlackTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+    <style name="MediumLightBlackTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+    <style name="MediumBoldGreyTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+    <style name="MediumLightGreyTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+    </style>
+
+
+
+
+</resources>
